@@ -6,7 +6,7 @@ const projectcards = document.querySelector(".projectcards");
 // Array of object for projects
 const projects = [
   {
-    title: "Virtual Assistant Python",
+    title: "This Page Is Under Development",
     cardImage: "assets/images/project-page/django.jpg",
     description: "Edit in progress",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
