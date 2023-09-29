@@ -10,7 +10,7 @@ const moocscards = [
     
   },
   {
-    title: "DSA in C++",
+    title: "DSA in C++(online)",
     cardImage: "assets/images/education-page/devtown.svg",
     
   },
