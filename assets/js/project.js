@@ -8,40 +8,38 @@ const projectcards = document.querySelector(".projectcards");
 const projects = [
   {
     title: "Simplicity",
-    cardImage: "https://source.unsplash.com/300x200/?weather",
     description:
       "A platform to post & read poetry. Connect through likes & maintain collections.",
     tags: ["Next js", "Convex dev", "TailwindCSS", "Typescript", "Clerk js"],
-    tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
+    tagimg:
+      "https://www.drupal.org/files/project-images/nextjs-icon-dark-background.png",
     Previewlink: "https://simplicity-poetries.vercel.app/",
     Githublink: "https://github.com/akadeepesh/Simplicity",
   },
   {
     title: "Pizza Theatre",
-    cardImage: "https://source.unsplash.com/300x200/?checklist",
     description: "A frontend heavy pizza application",
     tags: ["Next js", "Convex dev", "TailwindCSS", "Typescript", "Clerk js"],
-    tagimg: "https://cdn.iconscout.com/icon/free/png-512/vue-282497.png",
+    tagimg:
+      "https://www.drupal.org/files/project-images/nextjs-icon-dark-background.png",
     Previewlink: "https://pizza-theater.vercel.app/",
     Githublink: "https://github.com/akadeepesh/PizzaTheatre",
   },
   {
-    title: "Recipe Finder",
-    cardImage: "https://source.unsplash.com/300x200/?food,recipe",
-    description: "Find and save your favorite recipes",
-    tags: ["Angular", "Firebase", "Material UI"],
-    tagimg: "https://cdn.iconscout.com/icon/free/png-512/angular-3-226070.png",
-    Previewlink: "https://example.com/recipe-finder",
-    Githublink: "https://github.com/yourusername/recipe-finder",
+    title: "Personal Voice Assistant",
+    description: "Python & AI Project | October 2022 | Personal Project",
+    tags: ["Python", "SpeechRecognition", "React.js"],
+    tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
+    Previewlink: "https://github.com/akadeepesh/VirtualAssistant",
+    Githublink: "https://github.com/akadeepesh/VirtualAssistant",
   },
   {
-    title: "Budget Tracker",
-    cardImage: "https://source.unsplash.com/300x200/?money,budget",
-    description: "Track your expenses and manage your budget",
-    tags: ["Node.js", "Express", "MongoDB"],
-    tagimg: "https://cdn.iconscout.com/icon/free/png-512/nodejs-2-226035.png",
-    Previewlink: "https://example.com/budget-tracker",
-    Githublink: "https://github.com/yourusername/budget-tracker",
+    title: "Python Automation Projects",
+    description: "Automation Tools | July 2023 | Personal Projects",
+    tags: ["Python", "Automation"],
+    tagimg: "https://cdn.iconscout.com/icon/free/png-512/python-3521655.png",
+    Previewlink: "https://github.com/akadeepesh/",
+    Githublink: "https://github.com/akadeepesh/",
   },
 ];
 
@@ -49,18 +47,10 @@ const projects = [
 const showCards = () => {
   let output = "";
   projects.forEach(
-    ({
-      title,
-      description,
-      cardImage,
-      tags,
-      tagimg,
-      Previewlink,
-      Githublink,
-    }) => {
+    ({ title, description, tags, tagimg, Previewlink, Githublink }) => {
       output += `
         <div class="project-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-          <div class="project-image" style="background-image: url(${cardImage});">
+          <div class="project-image">
             <div class="project-overlay">
               <div class="project-header">
                 <div class="project-thumb">
